@@ -1,0 +1,34 @@
+Character (Base Class)
+Attributes:
+name: str
+health: int
+inventory: list
+Methods:
+init(self, name, health)
+display(self)
+take_damage(self, amount)
+Hero (Derived from Character)
+Attributes:
+moral_alignment: str (e.g., "Altruist", "Utilitarian", "Egoist")
+Methods:
+init(self, name, health, moral_alignment)
+update_alignment(self, decision)
+attack(self, target)
+use_item(self, item)
+Ally (Derived from Character)
+Attributes:
+loyalty: int (or another suitable attribute that represents their relationship with the Hero)
+Methods:
+assist(self, target)
+give_item(self, hero)
+Villain (Derived from Character)
+Attributes:
+evil_plan: str (or a similar attribute that defines their main goal or method of opposing the Hero)
+Methods:
+confront(self, target)
+retreat(self)
+Monster (Derived from Character)
+Attributes:
+monster_type: str (e.g., "Goblin", "Dragon")
+Methods:
+attack(self, target)
